@@ -16,7 +16,7 @@ import LoadingView from './src/loadingView';
 
 export const styles = StyleSheet.create({
   scrollView: {
-    paddingTop: 20,
+    padding: 20,
     backgroundColor: '#F5FCFF',
   }
 });
@@ -41,7 +41,7 @@ export class GithubIssuesApp extends Component {
     return (
       <ScrollView style={styles.scrollView}>
         {issues.map(issue => {
-          return <IssueView issue={issue} />;
+          return <IssueView key={issue.id} issue={issue} />;
         })}
       </ScrollView>
     );
