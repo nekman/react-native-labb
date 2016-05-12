@@ -1,5 +1,5 @@
 import React, { Component, Text, View } from 'react-native';
-import { styles } from './issueView';
+import { styles } from './repoView';
 
 export default class LoadingView extends Component {
 

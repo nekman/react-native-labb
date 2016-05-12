@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "GithubIssuesApp.app"
-               BlueprintName = "GithubIssuesApp"
-               ReferencedContainer = "container:GithubIssuesApp.xcodeproj">
+               BuildableName = "GithubApp.app"
+               BlueprintName = "GithubApp"
+               ReferencedContainer = "container:GithubApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "GithubIssuesAppTests.xctest"
-               BlueprintName = "GithubIssuesAppTests"
-               ReferencedContainer = "container:GithubIssuesApp.xcodeproj">
+               BuildableName = "GithubAppTests.xctest"
+               BlueprintName = "GithubAppTests"
+               ReferencedContainer = "container:GithubApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "GithubIssuesAppTests.xctest"
-               BlueprintName = "GithubIssuesAppTests"
-               ReferencedContainer = "container:GithubIssuesApp.xcodeproj">
+               BuildableName = "GithubAppTests.xctest"
+               BlueprintName = "GithubAppTests"
+               ReferencedContainer = "container:GithubApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "GithubIssuesApp.app"
-            BlueprintName = "GithubIssuesApp"
-            ReferencedContainer = "container:GithubIssuesApp.xcodeproj">
+            BuildableName = "GithubApp.app"
+            BlueprintName = "GithubApp"
+            ReferencedContainer = "container:GithubApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "GithubIssuesApp.app"
-            BlueprintName = "GithubIssuesApp"
-            ReferencedContainer = "container:GithubIssuesApp.xcodeproj">
+            BuildableName = "GithubApp.app"
+            BlueprintName = "GithubApp"
+            ReferencedContainer = "container:GithubApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "GithubIssuesApp.app"
-            BlueprintName = "GithubIssuesApp"
-            ReferencedContainer = "container:GithubIssuesApp.xcodeproj">
+            BuildableName = "GithubApp.app"
+            BlueprintName = "GithubApp"
+            ReferencedContainer = "container:GithubApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
