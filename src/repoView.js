@@ -1,6 +1,4 @@
 import React, {
-  Component,
-  StyleSheet,
   Image,
   Linking,
   TouchableHighlight,
@@ -8,7 +6,7 @@ import React, {
   View
 } from 'react-native';
 
-export const styles = StyleSheet.create({
+export const styles = React.StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'row',
@@ -43,7 +41,7 @@ export const styles = StyleSheet.create({
   }
 });
 
-export default class RepoView extends Component {
+export default class RepoView extends React.Component {
 
   constructor(props) {
     super(props);
@@ -51,7 +49,7 @@ export default class RepoView extends Component {
   }
 
   handleClick(url) {
-    this.linking.canOpenURL(url).then(supported => {
+    return this.linking.canOpenURL(url).then(supported => {
       if (supported) {
         this.linking.openURL(url);
       } else {
@@ -65,13 +63,15 @@ export default class RepoView extends Component {
 
     return (
       <View style={styles.container}>
-        <Image style={styles.thumbnail} source={{uri: repo.owner.avatar_url}} />
+        <Image style={styles.thumbnail} source={{ uri: repo.owner.avatar_url }} />
         <View style={styles.repo}>
           <Text style={styles.name}>{repo.name}</Text>
           <Text style={styles.stars}>&#9733; {repo.stargazers_count}</Text>
 
-          <TouchableHighlight underlayColor='transparent' onPress={() => this.handleClick(repo.html_url)}>
-              <Text style={styles.url}>{repo.html_url}</Text>
+          <TouchableHighlight
+              underlayColor='transparent'
+              onPress={() => this.handleClick(repo.html_url)}>
+                <Text style={styles.url}>{repo.html_url}</Text>
           </TouchableHighlight>
         </View>
       </View>

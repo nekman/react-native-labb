@@ -99,19 +99,19 @@ export class GithubApp extends Component {
         autoCorrect={false}
         style={styles.search}
         value={this.state.language}
-        onChangeText={language => this.setState({language})}
+        onChangeText={language => this.setState({ language })}
         onSubmitEditing={event => this.handleChange(event)}
       />
     );
   }
 
-  async searchRepos() {
+  searchRepos() {
     const { language } = this.state;
-    const { items } = await this.service.searchPopularReposBy(language);
-
-    this.setState({
-      loaded: true,
-      repos: items
+    this.service.searchPopularReposBy(language).then(res => {
+      this.setState({
+        loaded: true,
+        repos: res.items
+      });
     });
   }
 }
