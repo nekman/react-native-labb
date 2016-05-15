@@ -1,6 +1,7 @@
 # React Native Lab
 
-Just writing down my findings trying to setup a RN project.
+Just writing down my experience when settings up a new RN project for the first time.
+New to both React and React Native :)
 
 Running OSX (10.11.4) with<br>
 ```node --version``` => 4.2.2<br>
