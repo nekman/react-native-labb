@@ -1,7 +1,8 @@
-import React, { Component, Text, View } from 'react-native';
+import React from 'react';
+import { Text, View } from 'react-native';
 import { styles } from './repoView';
 
-export default class LoadingView extends Component {
+export default class LoadingView extends React.Component {
   render() {
     return (
       <View style={styles.container}>

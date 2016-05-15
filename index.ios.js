@@ -2,14 +2,14 @@
  * A hacky demo, to try RN.
  */
 
-import React, {
+import React from 'react';
+import {
   AppRegistry,
   Component,
   StyleSheet,
   ScrollView,
   TextInput,
-  View,
-  Text
+  View
 } from 'react-native';
 
 import GithubService from './src/githubService';

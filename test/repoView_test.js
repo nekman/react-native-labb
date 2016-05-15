@@ -4,7 +4,6 @@ import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import RepoView from '../src/repoView';
 
-
 describe('RepoView', () => {
   let wrapper = null;
   let mockRepo = null;
