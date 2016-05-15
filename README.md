@@ -13,7 +13,7 @@ Running OSX (10.11.4) with<br>
 I want to be able to test my code using Mocha, sinon and Enzyme.
 Found a great blog post describing how this could be done: <a href="https://blog.formidable.com/unit-testing-react-native-with-mocha-and-enzyme-51518f13ba73">https://blog.formidable.com/unit-testing-react-native-with-mocha-and-enzyme-51518</a>
 
-However, some parts did not work. When I got my test to run and pass, my app crashed with an error message saying:
+However, some parts did not work. When I got my test to run and pass, my app crashed with an error message saying (something like this):
 
 ```
 Unable to find this module in its module map or any of the node_modules directories under /Users/node_modules/${k} and its parent directories
