@@ -43,7 +43,8 @@ I removed the ```.babelrc``` file and changed ```test/mocks/compiler.js``` to
 babel.transform(src, {
   filename: fileName,
   presets: ['es2015', 'react']
-})```
+});
+```
 
 And everything started to work again.
 
