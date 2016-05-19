@@ -5,7 +5,6 @@
 import React from 'react';
 import {
   AppRegistry,
-  Component,
   StyleSheet,
   ScrollView,
   TextInput,
@@ -32,10 +31,10 @@ export const styles = StyleSheet.create({
 
 });
 
-export class GithubApp extends Component {
+export class GithubApp extends React.Component {
 
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.service = new GithubService();
 
     // Initial state
@@ -76,7 +75,7 @@ export class GithubApp extends Component {
           {this.renderSearchTextBox()}
           <LoadingView message={`Could not find any repos for ${language}.`} />
         </View>
-      )
+      );
     }
 
     return (
