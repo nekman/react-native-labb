@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "mocha --compilers js:test/compiler.js test/**/*_test.js",
+    "test": "mocha --compilers js:test/setup/compiler.js test/**/*_test.js",
     "eslint": "eslint -c .eslintrc src",
-    "coverage": "istanbul cover _mocha -- --compilers js:test/compiler.js"
+    "coverage": "istanbul cover _mocha -- --compilers js:test/setup/compiler.js test/**/*_test.js"
   },
   "dependencies": {
     "react": "^15.0.2",

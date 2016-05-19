@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Image,
-  StyleSheet,
-  Linking,
-  TouchableHighlight,
-  Text,
-  View
-} from 'react-native';
+import { Image, StyleSheet, Linking, TouchableHighlight, Text, View } from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {

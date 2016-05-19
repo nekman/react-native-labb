@@ -6,7 +6,8 @@ export default class GithubService {
 
   searchPopularReposBy(language) {
     const endpoint = `https://api.github.com/search/repositories?q=language:${language}&sort=stars&order=desc`;
-    return fetch(endpoint).then(response => {
+
+    return this.fetch(endpoint).then(response => {
       if (!response.ok) {
         console.warn('failed to get response');
         return { items: [] };
@@ -14,6 +15,7 @@ export default class GithubService {
       return response.json();
     }).catch(err => {
       console.warn(`error failed to fetch from ${endpoint}`, err);
+      return Promise.reject(err);
     });
   }
 }

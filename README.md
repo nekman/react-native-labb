@@ -46,7 +46,7 @@ I _think_ that the problem was that I've added a ```.babelrc``` (needed to use t
 
 **Solution**
 <br>
-I removed the ```.babelrc``` file and changed ```test/mocks/compiler.js``` to
+I removed the ```.babelrc``` file and changed ```test/setup/compiler.js``` to
 ```javascript
 babel.transform(src, {
   filename: fileName,
@@ -106,7 +106,7 @@ tests and prints:
 **Temporary solution:**<br>
 Use istanbul@1.0.0-alpha.2
 
-```istanbul cover _mocha -- --compilers js:test/compiler.js```
+```istanbul cover _mocha -- --compilers js:test/setup/compiler.js```
 
 
 #### Update to latest version
@@ -118,3 +118,12 @@ https://github.com/facebook/react-native/releases/tag/v0.26.0
 ```rnpm upgrade```
 
 Done!
+
+#### Unable to start simulator after renaming/moving files
+
+Strange error. For now, it have worked to
+re-generate the project files (it will prompt before overwriting)
+
+```react-native init GithubApp```
+
+See https://github.com/facebook/react-native/issues/4968
