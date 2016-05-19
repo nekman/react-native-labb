@@ -7,6 +7,13 @@ Running OSX (10.11.4) with<br>
 ```node --version``` => 4.2.2<br>
 ```npm --version``` => 3.5.3
 
+
+## Developing
+
+```npm run test``` - Runs mocha tests<br>
+```npm run coverage``` - Runs code coverage<br>
+```npm run eslint``` - Runs eslint<br>
+
 ## Problems so far
 
 #### 2016-05-15
@@ -86,3 +93,28 @@ import { Text, View } from 'react-native';
 #### Fix "TypeError: Cannot set property 'StyleSheet' of undefined"
 
 Solution https://github.com/nekman/react-native-labb/commit/21b581824faa716221798d8118660767e6c9d9f5#diff-6b7ca9615e36af45b6a644e0904bb90eR2
+
+#### 2016-05-19
+#### Add code coverage
+Some problems to get code coverage to work.
+
+Tried isparta but it does not write any coverage file, just runs unit
+tests and prints:
+
+```No coverage information was collected, exit without writing coverage information```
+
+**Temporary solution:**<br>
+Use istanbul@1.0.0-alpha.2
+
+```istanbul cover _mocha -- --compilers js:test/compiler.js```
+
+
+#### Update to latest version
+
+https://github.com/facebook/react-native/releases/tag/v0.26.0
+
+```npm install -g rnpm && npm install rnpm-plugin-upgrade@0.26 --save-dev```
+
+```rnpm upgrade```
+
+Done!
